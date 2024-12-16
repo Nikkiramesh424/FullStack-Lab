@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+     <h1>HTML LIST DEMONSTRATION</h1>
+</head>
+<body>   
+          <h2>Unordered List</h2>
+          <ul>
+              <li>B.tech</li>
+              <li>M.tech</li>
+              <li>Ph.D</li>
+          </ul>
+          <h2>Ordered List</h2>
+          <ol> 
+             <li>CSE</li>
+             <li>IT</li>
+             <li>ECE</li>
+          </ol>
+          <h2>Nested List</h2>
+          <dl>
+            <ul>
+                <li>II Year</li>
+            </ul>
+        </dl>
+          <dd>   
+            <ul> 
+                <li>Section-A</li>
+                <li>Section-B</li>
+                <li>Section-C</li>
+            </ul>
+          </dd>
+          <dl>
+            <ul>
+                <li>III Year</li>
+            </ul>
+        </dl>
+          <dd>
+            <ul>
+                <li>Section-A</li>
+                <li>Section-B</li>
+            </ul>
+          </dd>
+          <h2>Ordered List Inside an Unordered List</h2>
+          <dl>
+            <ul>
+                <li>Programming languages</li>
+            </ul>
+          </dl>
+          <dd>
+            <ol> 
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+          </dd>
+          <dl> 
+            <ul> 
+                <li>Databases</li>
+            </ul>
+          </dl>
+          <dd> 
+            <ol> 
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+            </ol>
+          </dd>
+          <h2>Definition List</h2>
+          <dl>HTML</dl>
+          <dd>HyperText Markup Language - the standard markup language for creating web pages</dd>
+          <dl>CSS</dl>
+          <dd>Cascading Style Sheets - used for styling HTML elements.</dd>
+          <dl>JavaScript</dl>
+          <dd>A programming language used to create dynamic and interactive web content.</dd>
+</body>
+</html>
