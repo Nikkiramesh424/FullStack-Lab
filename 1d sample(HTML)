@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Thumbnail Images with Links</title>
+        <style>
+            body {
+                font-family: Arial,sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color:#FFFFFF;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap:wrap;
+                gap: 10px;
+                padding: 20px;
+            }
+            .gallery a {
+                text-decoration: none;
+            }    
+            .gallery img {
+                width: 100px;
+                height: 100px;
+                object-fit:cover;
+                border: 2px solid black;
+                border-radius: 8px;
+                transition: transition 0.3s,border-color 0.3s;
+            }
+            .gallery img: :hover{
+                transform: scale(1.2);
+                border-color: #005663;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Thumbnail Image Gallery</h1>
+        <div class ="gallery">
+            <a href="/home/vitcse/Pictures/pk.jpg" target="_blank">
+                <img src="/home/vitcse/Pictures/pk.jpg" alt="Thumbnail1">
+            </a>
+            <a href="/home/vitcse/Pictures/shinchan.jpeg" target="_blank">
+                <img src="/home/vitcse/Pictures/shinchan.jpeg" alt="Thumbnail2">
+            </a>
+            <a href="/home/vitcse/Pictures/dhonii.jpg" target="_blank">
+                <img src="/home/vitcse/Pictures/dhonii.jpg" alt="Thumbnail3">
+            </a>
+            <a href="/home/vitcse/Pictures/beach.jpg" target="_blank">
+                <img src="/home/vitcse/Pictures/beach.jpg" alt="Thumbnail4">
+            </a>
+            <a href="/home/vitcse/Pictures/shiva.jpg" target="_blank">
+                <img src="/home/vitcse/Pictures/shiva.jpg" alt="Thumbnail5">
+            </a>
+        </div>
+    </body>
+</html>        
