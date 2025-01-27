@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Timetable Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-spacing: 5px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body> 
+    <h1>HTML Timetable Example</h1>
+    <table border="1" cellpadding="10" cellspacing="5">
+    <caption>Class Timetable</caption>
+    <tr>
+        <th>Day/Time</th>
+        <th>9:00AM-10:00AM</th>
+        <th>10:00AM-11:00AM</th>
+        <th>11:00AM-12:00PM</th>
+        <th>12:00PM-1:00PM</th>
+        <th>1:00PM-2:00PM</th>
+        <th>2:00PM-3:00PM</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        <td>P&S</td>
+        <td rowspan="2">Physics</td>
+        <td>SE</td>
+        <td rowspan="3" colspan="2">Lunch Break</td>
+        <td>ADSAA</td>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td>DT</td>
+        <td>MEFA</td>
+        <td>Computer Science</td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td colspan="2">FSD lab</td>
+        <td>SE</td>
+        <td>Dt</td>
+    </tr>
+    <tr>
+        <th>Thursday</th>
+        <td>OS</td>
+        <td>CRT</td>
+        <td rowspan="2">SE</td>
+        <td>FSD</td>
+        <td>MEFA</td>
+        <td>DT</td>
+    </tr>
+    <tr>
+        <th>Friday</th>
+        <td>Computer Science</td>
+        <td>OS lab</td>
+        <td>ADSAA</td>
+        <td>CRT</td>
+    </tr>
+    </table>
+</body>
+</html>
