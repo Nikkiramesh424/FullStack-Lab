@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Output Methods</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+            font-size: 32px;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #007BFF;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        #output {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+            background-color: #e8e8ef;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            display: inline-block;
+            width: 60%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="writeToDocument()">Write to Document</button>
+    <button onclick="logToConsole()">Log to Console</button>
+    <button onclick="updateInnerHTML()">Update Inner HTML</button>
+    <div id="output">Output will appear here.</div>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        function writeToDocument() {
+            document.open();
+            document.write("This text is written directly to the document.");
+            document.close();
+        }
+
+        function logToConsole() {
+            console.log("This message is logged to the console.");
+        }
+
+        function updateInnerHTML() {
+            document.getElementById("output").innerHTML = "This text is updated using innerHTML.";
+        }
+    </script>
+</body>
+</html>
