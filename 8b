@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekdays with Switch Case</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display Weekdays</h1>
+  <button onclick="showWeekday()">Enter Day Number</button>
+
+  <script>
+    function showWeekday() {
+      const dayNumber = prompt("Enter a number between 1 and 7:");
+      let dayName;
+
+      switch (dayNumber) {
+        case "1":
+          dayName = "Monday";
+          break;
+        case "2":
+          dayName = "Tuesday";
+          break;
+        case "3":
+          dayName = "Wednesday";
+          break;
+        case "4":
+          dayName = "Thursday";
+          break;
+        case "5":
+          dayName = "Friday";
+          break;
+        case "6":
+          dayName = "Saturday";
+          break;
+        case "7":
+          dayName = "Sunday";
+          break;
+        default:
+          alert("Invalid input! Please enter a number between 1 and 7.");
+          return;
+      }
+
+      alert(`The day is: ${dayName}`);
+    }
+  </script>
+</body>
+</html>
