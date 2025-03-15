@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Eligibility Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .not-eligible {
+            color: red;
+        }
+        .eligible {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Voter Eligibility Check</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td id="nameCell"></td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td id="ageCell"></td>
+        </tr>
+        <tr>
+            <th>Eligibility</th>
+            <td id="eligibilityCell"></td>
+        </tr>
+    </table><script>
+    let name = prompt("Please enter your name:");
+    let age = prompt("Please enter your age:");
+    
+    document.getElementById("nameCell").innerText = name;
+    document.getElementById("ageCell").innerText = age;
+    
+    let eligibilityCell = document.getElementById("eligibilityCell");
+    if (parseInt(age) >= 18) {
+        eligibilityCell.innerText = "Eligible to vote";
+        eligibilityCell.classList.add("eligible");
+    } else {
+        eligibilityCell.innerText = "Not eligible to vote";
+        eligibilityCell.classList.add("not-eligible");
+    }
+</script>
+
+</body>
+</html>
