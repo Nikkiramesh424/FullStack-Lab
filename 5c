@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.size{
+  font-size: 30px;
+}
+p.italic {
+  font-style: italic;
+}
+
+p.thick {
+  font-weight: bold;
+}
+p.small {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+p.decor{
+  text-decoration: underline;
+}
+p.a {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>CSS Font and Text Properties Demonstration</h1>
+<p class="size">This text demonstrates<strong> font-size.</strong></p>
+<p class="thick">This text demonstrates<strong> font-weight.</strong></p>
+<p class="italic">This text demonstrates<strong> font-style.</strong></p>
+<p class="decor">This text demonstrates<strong> text-decoration.</strong></p>
+<p class="small">This text demonstrates<strong> text-transformation.</strong></p>
+<p class="a">This text demonstrates<strong> text-alignment.</strong></p>
+
+</body>
+</html>
