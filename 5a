@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>CSS Colors References</h1>
+
+<h1 style="background-color:red;">Hello This is Maxi...!</h1>
+<h1 style="background-color:#1E90FF;">May I Know Your Name Please..?</h1>
+<h1 style="background-color:rgb(34,139,34)">My Name Is Yakshi...!</h1>
+<h1 style="background-color:rgba(255,99,71,0.7)">You had such a beautiful Name.</h1>
+<h1 style="background-color:hsl(276,97%,55%)">Thankyou</h1>
+<h1 style="background-color:hsla(120,64%,71%,0.7)">Let's be Friends...>
+</body>
+</html>
