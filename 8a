@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest of Three Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Find the Largest of Three Numbers</h1>
+        <button onclick="findLargest()">Find Largest</button>
+    </div>
+
+    <script>
+        function findLargest() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+            const num3 = parseFloat(prompt("Enter the third number:"));
+
+            // Validate the inputs
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+                alert('Please enter valid numbers in all fields.');
+                return;
+            }
+
+            // Find the largest number
+            let largest = num1;
+
+            if (num2 > largest) {
+                largest = num2;
+            }
+            if (num3 > largest) {
+                largest = num3;
+            }
+
+            // Display the result in a dialog box
+            alert(`The largest number is: ${largest}`);
+        }
+    </script>
+
+</body>
+</html>
